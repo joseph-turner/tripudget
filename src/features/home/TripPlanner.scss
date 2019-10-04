@@ -1,0 +1,14 @@
+@import '../../styles/mixins';
+
+.trip {
+  &__name {
+    &__input {
+      font-size: 26px;
+    }
+  }
+  &__travelers {
+    &__label {
+      flex-basis: 100%;
+    }
+  }
+}

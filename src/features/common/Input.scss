@@ -1,0 +1,33 @@
+@import '../../styles/mixins';
+
+.input {
+  position: relative;
+
+  &__label {
+    display: block;
+  }
+
+  &__prefix {}
+
+  &__field {
+  }
+
+  &__suffix {
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 5px;
+  }
+}
+
+.input-list {
+  .input {
+    margin-bottom: .6rem;
+  }
+}
+
+.counter {
+  &__label {
+    margin-bottom: 0;
+  }
+}

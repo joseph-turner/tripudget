@@ -1,14 +1,14 @@
 import {
-  DefaultPage,
+  TripPlanner,
 } from './';
 
 export default {
   path: '/',
   name: 'Home',
   childRoutes: [
-    { path: 'default-page',
-      name: 'Default page',
-      component: DefaultPage,
+    { path: '',
+      name: 'TripPlanner',
+      component: TripPlanner,
       isIndex: true,
     },
   ],

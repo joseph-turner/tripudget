@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faMinusSquare, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Header, Footer } from '../common'
+
+library.add(faMinusSquare, faPlusSquare);
 
 /*
   This is the root component of your app. Here you define the overall layout
@@ -17,8 +23,10 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="home-app">
-        <div className="page-container">{this.props.children}</div>
+      <div className="app">
+        <Header />
+        {this.props.children}
+        <Footer />
       </div>
     );
   }

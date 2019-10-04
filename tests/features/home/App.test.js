@@ -6,6 +6,6 @@ describe('home/App', () => {
   it('renders node with correct class name', () => {
     const renderedComponent = shallow(<App />);
 
-    expect(renderedComponent.find('.home-app').length).toBe(1);
+    expect(renderedComponent.find('.app').length).toBe(1);
   });
 });

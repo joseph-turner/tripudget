@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import homeReducer from '../features/home/redux/reducer';
+import tripReducer from '../features/home/redux/reducer';
 import commonReducer from '../features/common/redux/reducer';
 import examplesReducer from '../features/examples/redux/reducer';
 
@@ -11,7 +11,7 @@ import examplesReducer from '../features/examples/redux/reducer';
 
 const reducerMap = {
   router: routerReducer,
-  home: homeReducer,
+  trip: tripReducer,
   common: commonReducer,
   examples: examplesReducer,
 };
